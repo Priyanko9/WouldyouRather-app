@@ -1,0 +1,313 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.signInBlock{
+  display: flex;
+  flex-direction: column;
+  top: 30%;
+  position: absolute;
+  left: 40%;
+  width:20%;
+}
+
+.signInButton{
+  margin-top:15px;
+}
+.signInButton input{
+  width: 100%;
+  margin-top: 5px;
+  background-color: green;
+  border-color: green;
+  border-radius: 25px;
+  border-style: solid;
+  color: white;
+  padding: 5px;
+  outline: none;
+  cursor: pointer;
+}
+
+.userListBox select{
+  width: 100%;
+  outline: none;
+  height: 50px;
+  border-color: green;
+  border-style: solid;
+  border-width: 2px;
+}
+
+.nav{
+  flex:1;
+  margin-bottom:20px
+}
+
+.nav ul{
+  display:flex;
+  background-color:green;
+}
+
+.nav li{
+  list-style: none;
+  margin: 15px;
+  color: white;
+}
+
+.nav li a{
+  color: white;
+  text-decoration: none;
+}
+.appContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home{
+  background-color:white;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+.postSection{
+  margin-bottom:5px;
+  margin-top:15px;
+  border-style: solid;
+  border-color: green;
+}
+
+.postSection header{
+  text-align:center;
+  font-weight: bold;
+}
+.postBody{
+  display: flex;
+  margin-top: 10px;
+}
+.userImage{
+  margin: 10px;
+  padding: 20px;
+  border-right-style: solid;
+  border-right-width: thin;
+  border-color: green;
+}
+.questionSection{
+  display: flex;
+  flex-direction: column;
+  margin-left:5px;
+}
+.questionSection h3{
+  margin-bottom:5px;
+}
+.questionSection button{
+  margin-top:5px;
+  width:100px;
+  background-color: green;
+  border-color: green;
+  border-radius: 25px;
+  border-style: solid;
+  color: white;
+  padding: 5px;
+  outline: none;
+  cursor: pointer;
+}
+.qTabs{
+  background-color: green;
+  align-self: center;
+  width: 340px;
+  text-align: center;
+  height: 30px;
+  color: white;
+  border-top-left-radius: 55px;
+  border-top-right-radius: 55px;
+  display:flex;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-color: green;
+  border-style: solid;
+  border-width: 3px;
+}
+.qTabs div{
+  padding-left: 5px;
+  padding-right: 5px;
+  cursor:pointer;
+}
+.newQuestion{
+  background: forestgreen;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  padding: 20px;
+  margin-top: 50px;
+}
+.leaderboard{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  padding: 20px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: green;
+  background-color: darkkhaki;
+  margin-top: 50px;
+}
+.infoSection{
+  margin-left:10px;
+  margin-right:10px;
+}
+.imageSection{
+  margin:10px;
+}
+.leaderboard .infoSection h4{
+  margin-top:5px;
+  margin-bottom:5px;
+}
+.userScoreCard{
+  margin:10px;
+  padding:10px;
+  display:flex;
+  justify-content: space-around;
+}
+.totalScore{
+  display:flex;
+  flex-direction: column;
+  width: 70px;
+  margin-left: 10px;
+}
+.totalScore h4{
+  margin-top:4px;
+  margin-bottom:10px;
+}
+.questionBody{
+  display: flex;
+}
+.questionSection label{
+  margin-left: 5px;
+}
+.pollResultSection{
+  padding: 10px;
+  width: 300px;
+}
+.optionRadio{
+  margin:5px
+}
+.votePercent{
+  border-radius: 25px;
+  border-color: green;
+  border-style: solid;
+  border-width: 2px;
+}
+.logout{
+  position: absolute;
+  top: 4%;
+  right: 10%;
+  width: 50px;
+  color: white;
+  background: green;
+  border-radius: 25px;
+  padding: 10px;
+  cursor:pointer;
+}
+.questionAsked{
+  margin-top: 50px;
+}
+.poll{
+  border-color: green;
+  border-style: solid;
+  width:360px;
+  margin-top: 50px;
+}
+.answered{
+   background:green;
+   border-top-left-radius: 5px;
+   border-bottom-left-radius: 5px;
+   border-top-right-radius: 5px;
+   border-bottom-right-radius: 5px;
+   text-align: center;
+}
+.notAnswered{
+  background:white;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.newQuestion .submit{
+  background-color: white;
+  border-radius: 25px;
+  border-style: solid;
+  color: black;
+  outline: none;
+  cursor: pointer;
+  margin-top: 15px;
+  outline: none;
+}
+.optionOne{
+  width:70%
+}
+.optionTwo{
+  width:70%
+}
+.optionOneText{
+  width:130%
+}
+.optionTwoText{
+  width:130%
+}
+
+@media only screen and (max-width:700px){
+  .userScoreCard{   
+   flex-direction: column;
+      padding:0px
+  }
+  .logout{
+    position: absolute;
+    right: 45%;
+    width: 50px;
+    color: white;
+    background: green;
+    border-radius: 25px;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 60px;
+  }
+  .postBody{
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column;
+    padding: 10px;
+  }
+  .signInButton{
+    width:150%;
+  }
+  .userListBox select{
+    width:150%;
+  }
+}
