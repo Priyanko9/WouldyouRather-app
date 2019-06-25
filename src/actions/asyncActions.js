@@ -4,7 +4,6 @@ import { receiveUsers} from './usersAction.js';
 
 export function loadQuestions(){
     return (dispatch)=>{
-    //dispatch(showLoading());
         return _getQuestions().then((questions)=>{
             dispatch(receiveQuestions(questions));
         })
@@ -13,7 +12,6 @@ export function loadQuestions(){
 
 export function loadUsers(){
     return (dispatch)=>{
-    //dispatch(showLoading());
         return _getUsers().then((users)=>{
             dispatch(receiveUsers(users));
         })

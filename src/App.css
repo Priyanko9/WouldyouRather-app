@@ -281,6 +281,9 @@
 .optionTwoText{
   width:130%
 }
+.errorPage{
+  text-align:center;
+}
 
 @media only screen and (max-width:700px){
   .userScoreCard{   
@@ -309,5 +312,8 @@
   }
   .userListBox select{
     width:150%;
+  }
+  .errorPage{
+    text-align:center;
   }
 }

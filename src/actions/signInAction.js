@@ -1,5 +1,5 @@
-export const LOGIN_STATE = 'LOGIN'
-export const LOGOUT_STATE = 'LOGOUT'
+import {LOGIN_STATE} from './actionTypes';
+import {LOGOUT_STATE} from './actionTypes';
 
 export function LOGIN(user) {
   return {

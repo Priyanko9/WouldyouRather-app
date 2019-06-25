@@ -9,13 +9,11 @@ export class SignIn extends Component{
         const selectedUser=selectElement.options[selectElement.selectedIndex].value;
         if(selectedUser!==""){
             this.props.dispatch(LOGIN(selectedUser));
+            window.history.pushState({},'login','/home');
         }
     }
     render(){
         const username=Object.keys(this.props.state.users);
-        // const userObjectArray=username.map((name)=>{
-        //     return this.props.state.users[name];
-        // })
         return(
             <div className="signInBlock">
                 <div className="userListBox">

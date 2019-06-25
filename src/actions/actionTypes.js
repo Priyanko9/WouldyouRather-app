@@ -1,0 +1,5 @@
+export const RECEIVE_QUESTIONS = 'RECEIVE_QUESTIONS'
+export const SAVE_QUESTION = 'SAVE_QUESTION'
+export const LOGIN_STATE = 'LOGIN'
+export const LOGOUT_STATE = 'LOGOUT'
+export const RECEIVE_USERS = 'RECEIVE_USERS'

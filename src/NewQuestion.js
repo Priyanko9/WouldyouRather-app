@@ -2,6 +2,7 @@ import React,{Component} from 'react';
 import { connect } from 'react-redux'
 import './App.css';
 import { saveNewQuestion} from './actions/asyncActions.js';
+import {withRouter} from 'react-router-dom';
 
 class NewQuestion extends Component {
 
@@ -21,6 +22,7 @@ class NewQuestion extends Component {
     document.getElementsByClassName("optionOneText")[0].value="";
     document.getElementsByClassName("optionTwoText")[0].value="";
     this.setState({message:true});
+    this.props.history.push({pathname:`/home`});
   }
   render(){
     return (
@@ -46,4 +48,4 @@ class NewQuestion extends Component {
 const mapStateToProps=(state)=>{
   return {state};
 }
-export default connect(mapStateToProps)(NewQuestion);
+export default withRouter(connect(mapStateToProps)(NewQuestion));

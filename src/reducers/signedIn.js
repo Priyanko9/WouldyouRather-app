@@ -1,4 +1,4 @@
-import { LOGIN_STATE,LOGOUT_STATE } from '../actions/signInAction.js' 
+import { LOGIN_STATE,LOGOUT_STATE } from '../actions/actionTypes.js' 
 
 export default function signedIn (state = {signedIn:false}, action) {
   switch(action.type) {

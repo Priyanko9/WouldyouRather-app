@@ -1,5 +1,5 @@
-export const RECEIVE_QUESTIONS = 'RECEIVE_QUESTIONS'
-export const SAVE_QUESTION = 'SAVE_QUESTION'
+import {RECEIVE_QUESTIONS} from './actionTypes';
+import {SAVE_QUESTION} from './actionTypes';
 
 export function receiveQuestions (questions) {
   return {
@@ -14,10 +14,3 @@ export function saveQuestion (question) {
       question
     }
 }
-
-// export function saveAnswer (questions) {
-//     return {
-//       type: RECEIVE_QUESTIONS,
-//       questions,
-//     }
-// }
