@@ -3,6 +3,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 This is a questioning app where a user can sign and ask any random question with two options.
 The user can also see what is his/her score and where he stands in the leaderboard.He can choose between answered and unanswered questions.For answered question ,he/she can directly see the poll result and for unanswered question the user has to first answer the question and then he/she will be able to view the poll result.
+The app is live at https://wouldyourather.onrender.com/
+
 
 ### `Install`
 
